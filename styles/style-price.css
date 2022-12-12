@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+
+h1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 56px;
+    text-align: center;
+    color: #000;
+    margin: 0;
+}
+
+
+
+/**/
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.button-enroll {
+    width: 240px;
+    height: 60px;
+    justify-content: center;
+    border: 1px solid #fb37ff;
+    box-shadow: 0 0 15px 3px #fb37ff;
+}
+
+.button-enroll:hover {
+    border: 1px solid white;
+    box-shadow: 0 0 15px 3px #fff;
+}
+
+.button-enroll:hover a {
+    color: white;
+}
+
+.button-enroll a {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fb37ff;
+}
+
+
+/* ФОРМА (начало) */
+
+.record-form {
+    width: 786px;
+    height: 731px;
+    background-color: #252525;
+    color: #fb37ff;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 100px;
+    z-index: 100;
+    display: none;
+}
+
+#gray {  /*Затемнение при клике на кнопку Отправить*/
+    background-color: rgb(69, 69, 69);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    opacity: 0.7;
+    display: none;
+}
+
+.record-form__container {
+    height: 447px;
+    margin-top: 143px;
+    margin-left: 40px;
+    position: relative;
+    bottom: 60px;
+}
+
+.record-form .legend {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #fff;
+    position: relative;
+    right: 30px;
+}
+
+
+.record-form p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.record-form p.button-enroll__information-button-click {
+    width: 410px;
+    color: #fb37ff;
+    display: none;
+}
+
+.record-form .legend__call-back {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.record-form input {
+    height: 60px;
+    width: 660px;
+    margin-bottom: 50px;
+    outline: 0;
+    outline-offset: 0;
+    color: #FFFFFF;
+    padding-left: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: #252525;
+    border: 1px solid #fb37ff;
+}
+
+.record-form input::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff; 
+    opacity: 0.75;
+}
+
+.record-form input::required {
+    border: 1px solid #fff;
+}
+
+.record-form input:focus {
+    border: 1px solid #fff;
+}
+
+
+.record-form input:valid {
+    border: 1px solid white;
+}
+
+.record-form input:invalid {
+    border: 1px solid #f32e7c;
+}
+
+.record-form__button-enroll .record-form__button {
+    margin-right: 48px;
+    align-items: center;
+    width: 240px;
+    color: #fb37ff;
+    padding-right: 28px;
+}
+
+.record-form__button-enroll .record-form__button:valid {
+    border: 1px solid #FB37FF;
+}
+
+.record-form__button-enroll:hover .record-form__button {
+    border: 1px solid white;
+    color: white;
+}
+
+.button-enroll__information {
+    width: 410px;
+    position: relative;
+    bottom: 22px;
+}
+
+.record-form__cross {
+    position: relative;
+    top: -40px;
+    left: 671px;
+}
+
+.choose-service {
+    width: 705px;
+    margin-bottom: 50px;
+}
+
+.choose-service select {
+    color: white;
+    background-color: #252525;
+    border: 1px solid white;
+    padding-left: 22px;
+}
+/*конец формы*/
+
+/**/
+
+.error__text--prop {
+    color: #fff;
+}
+
+.title-textprop {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.container { /* нужны ли паддинги, чтобы не прилипал к краям?! */
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-bg {
+    background-color: #252525;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-sb {
+    justify-content: space-between;
+}
+
+.icons--prop {
+    width: 225px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.icons-footer--prop {
+    width: 225px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+    /*выпадающий список (гамбургер)*/
+    
+    .mein-menu__toggle {
+        display: none;
+    }
+
+    .mein-menu__toggle.is-active + .mein-menu__nav + .icons--prop {
+        display: block;
+
+    }
+
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+        background-color: #fb37ff;
+    }
+
+    .hamburger.is-active .hamburger-inner, .hamburger.is-active 
+    .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+        background-color: #fff;
+    }
+    
+.mein-menu--burger {
+    display: flex;
+}
+
+/* стиль кнопок (начало) */
+
+.list--prop {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+}
+/* стиль кнопок (конец)*/
+
+
+/* ШАПКА */
+.header-menu {
+    height: 200px;
+    background-color: #252525;
+    text-align: center;
+}
+
+.header-menu p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.top-menu {
+    display: flex;
+    width: 100%;
+    max-width: 1140px;
+    min-width: 320px;
+    height: 46px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 27px;  
+}
+
+.top-menu__contacts {
+    width: 856px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-menu__contacts a {
+    text-decoration: none;
+}
+
+.mein-menu {
+    display: flex;
+    width: 100%;
+    max-width: 1140px;
+    min-width: 320px;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.logo {
+    height: 48px;
+    width: 292px;
+    margin-right: 50px;
+}
+
+.mein-menu-list {
+    width: 493px;
+    padding: 0;
+    list-style-type: none;
+    padding-right: 60px;
+}
+
+/* КОНТЕНТ */
+.price {
+    max-width: 1140px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+
+.price-block {
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    margin-top: 100px;
+}
+.price-block .price-block__item {
+    max-height: 520px;
+    margin-bottom: 100px;
+}
+
+.text-margin {
+    margin-top: 100px;
+}
+
+.price-block--name {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;    
+    height: 76px;
+    margin-bottom: 0;    
+    color: #000;
+    position: relative;
+    text-align: left;
+}
+
+.price-block--price {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #252525;
+    margin: 0;
+    position: relative;
+    text-align: left;
+}
+
+.price-block--img-prop {
+    width: 368px;
+    height: 367px;
+    background-color: #fb37ff;
+}
+
+/* ПОДВАЛ */
+.footer {
+    height: 266px;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+}
+
+.footer-prop {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    display: flex;
+    width: calc(100%/2);
+}
+
+.footer-left__list {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.footer-left__list li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    text-align: right;
+    margin-top: 83px;
+}
+
+/* СТРАНИЦА 404 */
+.error {
+    height: 838px;
+    background-color: #252525;
+}
+
+.error h1 {
+    text-align: right;
+}
+
+.error__text--prop {
+    color: #fff;
+}
+
+.error__description p {
+    color: #fff;
+}
+
+.error__description a {
+    color: #fb37ff;
+}
+
+.error--prop {
+    background-color: #252525;
+    max-width: 1140px;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error--prop img {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-left: 40%;
+}
+
+.footer--404 {
+    margin-top: 0;
+    display: none;
+}

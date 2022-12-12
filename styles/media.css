@@ -1,0 +1,514 @@
+@media screen and (max-width: 744px) {
+    .phone-media {
+        display: none;
+    }
+
+    .header-top__social-network {
+        display: none;
+    }
+    
+    .header-menu {
+        display: none;
+    }
+
+    .header-bottom {
+        width: 100%;
+    }
+
+    .header-bottom .button-enroll {
+        display: none;
+    }
+
+    .header-burger {
+        display: block;
+        background-color: #252525;
+        /* box-shadow: 1px 1px 0px #FB37FF, -1px -1px  #FB37FF; */
+        position: absolute;
+        margin-right: 0;
+        display: none;
+        z-index: 110;
+    }
+
+    .burger-inactive {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+    
+    .services-and-prices {
+        width: 100%;
+        height: auto;
+    }
+
+    .services-and-prices__menu img {
+        width: auto;
+    }
+
+    .education {
+        margin-top: -75px;
+        width: auto;
+    }
+
+    .education-media {
+        width: auto;
+    }
+
+    .education-banner__enroll {
+        width: auto;
+        justify-content: start;
+    }
+
+    .education-banner__img img {
+        right: 0;
+    }
+
+    .education-banner__text {
+        left: 0;
+        width: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .education-banner__text-banner {
+        width: auto;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .education-banner__text-banner p {
+        width: 240px;
+    }
+
+    .our-team {
+        height: auto;
+    }
+
+    .our-team__photos {
+        width: auto;
+        height: auto;
+    }
+
+    .our-team__team h2 {
+        width: auto;
+    }
+
+    .our-team__photos-media {
+        width: auto;
+    }
+
+    .our-team__photos-media img {
+        width: auto;
+        height: auto;
+    }
+
+    .reviews {
+        width: auto;
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
+
+    .reviews-media {
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .reviews__text {
+        width: auto;
+        height: auto;
+        padding: 0;
+    }
+
+    .reviews__text h2 {
+        margin-bottom: 0;
+        width: auto;
+    }
+
+    .reviews__text p {
+        width: auto;
+        height: auto;
+        text-align: left;
+    }
+
+
+    .reviews-widget {
+        height: 800px;
+        width: 744px;
+    }
+
+    .how-find-us {
+        width: auto;
+        height: auto;
+    }
+
+    .how-find-us__content {
+        width: auto;
+        height: auto;
+    }
+
+    .how-find-us-media {
+        flex-direction: column;
+    }
+
+    .map {
+        width: auto;
+        margin-bottom: 30px;
+    }
+    
+    .how-find-us__contacts {
+        margin-bottom: 30px;
+    }
+
+    .footer {
+        width: auto;
+    }
+
+    .button-up{
+        left: 50%;
+        z-index: 75;
+    }
+
+    /*********БАННЕРЫ***********/
+
+    .banners {
+        height: 380px;
+    }
+
+    .first-banner__img {
+        transform: scale(0.6,0.6);
+        right: 230px;
+        bottom: 125px;
+    }
+
+    .first-banner__benefits {
+        font-size: 48px;
+        position: relative;
+        right: 200px;
+    }
+
+    .first-banner__benefits--1 {
+        margin-top: 10px;
+    }
+
+    .first-banner__benefits--2 {
+        position: relative;
+        top: -40px;
+    }
+
+    .first-banner__text {
+        left: -200px;
+    }
+
+    .first-banner__text {
+        left: -240px;
+        bottom: 70px;
+        width: 330px;
+    }
+
+    .second-banner__img {
+        transform: scale(0.6,0.6);
+        right: 325px;
+        top: -143px;
+    }
+
+    .second-banner__text {
+        font-size: 48px;
+        position: relative;
+        bottom: 50px;
+        right: 50px;
+    }
+
+    .second-banner__button {
+        right: 50px;
+        top: -100px;
+        width: 660px;
+    }
+
+    .third-banner img{
+        transform: scale(1.15,1.15);
+        position: relative;
+        left: 53px;
+        bottom: 29px;
+    }
+
+    .third-banner__content {
+        right: 0;
+        left: -575px;
+        bottom: 30px;
+    }
+
+    .third-banner__content-media {
+        font-size: 48px;
+        position: relative;
+        right: 20px;
+    }
+
+    .left-arrow {
+        top: 65px;
+        left: 30px;
+    }
+    
+    .right-arrow {
+        top: 65px;
+        left: 60px;
+    }    
+}
+
+
+
+@media screen and (max-width: 320px) {
+
+    .left-arrow {
+        top: 110px;
+        left: 30px;
+    }
+    
+    .right-arrow {
+        top: 110px;
+        left: 60px;
+    }
+
+    .header-top__contacts a p {
+        font-size: 16px;
+    }
+
+    .header-bottom {
+        right: 0;
+        justify-content: start;
+    }
+
+    .header-bottom a img {
+        display: block;
+        transform: scale(0.6,0.6);
+        justify-content: stretch;
+    }
+
+    .header-bottom-logo {
+        position: relative;
+        right: 62px;
+    }
+
+    /*********БАННЕРЫ***********/
+
+  
+
+    /*********ОБУЧЕНИЕ**********/
+
+    .education {
+        height: auto;
+    }
+
+    .education-media h2 {
+        width: auto;
+    }
+    
+    .education-banner__img {
+        width: auto;
+        justify-content: start;
+        position: relative;
+    }
+
+    .education-banner__img img {
+        transform: scale(0.6,0.6);
+        width: auto;
+        margin-right: 0;
+        margin-left: 0;
+        position: absolute;
+        right: -10px;
+        bottom: 25px;
+    }
+
+    .education-banner__enroll {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .education-banner__img {
+        order: 2;
+        right: -53px;
+    }
+
+    .education-banner__text {
+        order: 1;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
+    .education-banner__text-banner p {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .education-banner__text .button-enroll {
+        margin-top: 255px;
+        margin-left: 15px;
+        margin-bottom: 55px;
+    }
+
+    .our-team__team {
+        position: relative;
+    }
+
+    .our-team__photos {
+        justify-content: center;
+        bottom: 300px;
+    }
+
+    /* .reviews {
+        position: relative;
+        bottom: 300px;
+    } */
+
+    .reviews-media {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .how-find-us__contacts p1 {
+        font-size: 26px;
+    }
+
+    .how-find-us__contacts p2 {
+        font-size: 16px;
+    }
+
+    .footer_list {
+        display: none;
+    }
+
+    .footer-contacts p {
+        display: none;
+    }
+
+    footer {
+        height: 325px;
+    }
+    .footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer-logo {
+        left: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .footer-contacts__social-network {
+        margin-bottom: 46px;
+        margin-left: -50px;
+    }
+
+    .header-burger ul li a {
+        font-size: 16px;
+    }
+    
+    .header-burger ul {
+        right: 0;
+    }
+
+    .header-top__social-network-media  {
+        margin-left: 46px;
+    }
+
+    .header-top__social-network-media a {
+        font-size: 24px;
+    }
+
+    .burger-active {
+        margin-top: 2px;
+    }
+
+    .button-up {
+        left: 23%;
+    }
+
+    /*********БАННЕРЫ***********/
+
+    .first-banner__img {
+        transform: scale(0.4,0.4);
+        left: -250px;
+        top: -170px;
+    }
+
+    .first-banner__benefits {
+        font-size: 32px;
+        left: -430px;
+        top: 75px;
+        z-index: 40;
+    }
+
+    .first-banner__benefits--2 {
+        top: 10px;
+    }
+
+    .first-banner__text {
+        width: 240px;
+        left: -580px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+        top: 40px;
+        padding: 0;
+    }
+
+    .second-banner__img {
+        transform: scale(0.3,0.3);
+        right: 550px;
+        top: -135px;
+    }
+
+    .second-banner__text {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 42px;
+        bottom: 40px;
+        right: 80px;
+    }
+
+    .second-banner__text--2 {
+        bottom: 35px;
+    }
+
+    .second-banner__button {
+        width: 328px;
+        height: 72px;
+        right: 100px;
+        top: 75px;
+    }
+
+    .second-banner__button a p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 29px;
+        text-align: center;
+    }
+
+    .third-banner img {
+        transform: scale(0.6,0.6);
+        left: -172px;
+        top: 4px;
+    }
+
+    .third-banner__content-media {
+        right: 85px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 38px;
+        width: 270px;
+    }
+
+    .third-banner .second-banner__button {
+        top: -44px;
+        width: 330px;
+    }
+
+    .reviews-widget {
+        height: 400px;
+    }
+}
