@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BeautyBar Наращивание и ламинирование ресниц</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- подключаем стили -->
+    <link href="styles/hamburger.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
+</head>
+<body>
+    
+    <div id="gray"></div>
+    <!-- доработать форму (открывается сразу при открытии страницы) -->
+    <header class="header-menu container">
+       
+        <form id="record-form-id" class="record-form d-flex" action="" method="post">
+            <div class="record-form__container d-flex flex-wrap">
+                <div class="record-form__cross" onclick="show('none')"><a href="#!"><img src="images/cross.svg" alt=""></a></div>
+                <legend class="legend">Оставьте свой номер</legend>
+                <p class="legend__call-back">Мы перезвоним и запишем вас на удобное время</p>
+                <input name="name" required class="input-name"type="text" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" title="Введите свое имя русскими или латинскими буквами">
+                <input name="phone" required class="input-phone" type="tel" placeholder="Телефон в формате 8-ХХХ-ХХХ-ХХ-ХХ" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="Введите номер телефона в формате 8-ХХХ-ХХХ-ХХ-ХХ">
+                <div class="choose-service d-flex flex-sb">
+                    <p>Я хочу записаться на:</p>
+                    <select name="choose-roduct" id="">
+                        <option class="choose-roduct" value="stарт"><p>...</p></option>
+                        <option class="choose-roduct" value="education1"><p>Обучение по курсу  "Итальянское наращивание волос"</p></option>
+                        <option class="choose-roduct" value="education2">Обучение по курсу  "Ламинирование и ботокс натуральных ресниц"</option>
+                        <option class="choose-roduct" value="hair-coloring">Окрашивание волос</option>
+                        <option class="choose-roduct" value="hair-extension">Наращивание волос</option>
+                        <option class="choose-roduct" value="eyelash-extension">Наращивание ресниц</option>
+                        <option class="choose-roduct" value="brows">Коррекция, окрашивание бровей</option>
+                        <option class="choose-roduct" value="nails">Маникюр/педикюр</option>
+                    </select>
+                </div>
+                <div class="record-form__button-enroll d-flex flex-wrap">
+                    <!-- <div class="button-enroll record-form__button d-flex" onclick=""><p><a href="#!">Отправить</a></p></div> -->
+                    <input class="button-enroll record-form__button" type="submit" value="Отправить">
+                    <p class="button-enroll__information">Нажимая на кнопку «Отправить», вы соглашаетесь на обработку персональных данных</p>
+                    <p class="button-enroll__information-button-click">Данные успешно отправлены! Мы перезвоним вам в течение 15 минут.</p>
+                </div>
+            </div>
+        </form>
+        <!-- ШАПКА -->
+            <div class="top-menu d-flex">
+                <div class="top-menu__contacts">
+                    <p>Нижний Новгород, ул. Бурденко, 33</p>
+                    <p class="top-menu__p">+7 (966) 018 - 01 - 89</p>
+                </div>
+                <div class="icons--prop"> <!-- убрать иконки в бургер -->
+                    <a href="https://vk.com/public211470536"><img src="images/VK Circled.svg" alt=""></a>
+                    <a href="https://viber.click/79960180189"><img src="images/Viber.svg" alt=""></a>
+                    <a href="https://wa.me/79960180189"><img src="images/WhatsApp.svg" alt=""></a>
+                </div>      
+            </div>
+            <div class="mein-menu">
+                <a href="#"><img class="logo" src="images/logo.svg" alt=""></a>
+                
+                <div class="mein-menu--burger">
+                    <!-- меню-гамбургер -->
+                    <button class="mein-menu__toggle hamburger hamburger--squeeze" type="button" onclick="this.classList.toggle('is-active')">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                      </button>
+                    <!-- список меню -->
+                    <nav class="mein-menu__nav">
+                        <ul class="mein-menu-list d-flex flex-sb">
+                            <li><a class="list--prop" href="#">Услуги</a></li>
+                            <li><a class="list--prop" href="#">О нас</a></li>
+                            <li><a class="list--prop" href="#">Курсы</a></li>
+                            <li><a class="list--prop" href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <!-- <form action="#" target="_blank">
+                        <button class="btn btn--activ">Записаться</button>
+                    </form> -->
+                    <div class="button-enroll d-flex" onclick="show('block')">
+                        <p><a href="#!">Записаться</a></p>
+                    </div>
+
+                </div>
+            </div>
+        
+    </header>
+
+    <!-- КОНТЕНТ -->
+    <section class="price container">
+        <h1>Наращивание и ламинирование<br>ресниц</h1>
+        <div class="price-block">
+            <div class="price-block__item">
+                <h2 class="price-block--name">Ламинирование<br>ресниц</h2>
+                <div class="price-block--img-prop"></div>
+                <p class="price-block--price">1700 ₽</p>
+            </div>
+            <div class="price-block__item">
+                <h2 class="price-block--name">Классика</h2>
+                <div class="price-block--img-prop"></div>
+                <p class="price-block--price">1600 ₽</p>
+            </div>
+            <div class="price-block__item">
+                <h2 class="price-block--name">Объем 2 D</h2>
+                <div class="price-block--img-prop"></div>
+                <p class="price-block--price">1800 ₽</p>
+            </div>
+            <div class="price-block__item">
+                <h2 class="price-block--name">Объем 3 D</h2>
+                <div class="price-block--img-prop"></div>
+                <p class="price-block--price">2000 ₽</p>
+            </div>
+            <div class="price-block__item">
+                <h2 class="price-block--name">Объем 4 D</h2>
+                <div class="price-block--img-prop"></div>
+                <p class="price-block--price">2200 ₽</p>
+            </div>
+            <div class="price-block__item">
+                <h2 class="price-block--name">Объем 5 D</h2>
+                <div class="price-block--img-prop"></div>
+                <p class="price-block--price">2800 ₽</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer container">
+        <div class="footer-prop d-flex flex-sb">
+            <nav class="footer-left flex-sb">
+                <ul class="footer-left__list">
+                    <li><a class="list--prop" href="#">Услуги</a></li>
+                    <li><a class="list--prop" href="#">Курсы</a></li>
+                    <li><a class="list--prop" href="#">О нас</a></li>
+                    <li><a class="list--prop" href="#">Контакты</a></li>
+                </ul>
+                <a class="footer-logo" href="#"><img src="images/logo-footer.svg" alt=""></a>    
+            </nav>
+            
+            <div class="footer-right">
+                <div class="icons-footer--prop">
+                    <a href="#"><img src="images/VK Circled.svg" alt=""></a>
+                    <a href="#"><img src="images/Viber.svg" alt=""></a>
+                    <a href="#"><img src="images/WhatsApp.svg" alt=""></a>
+                </div>
+                <p>+7 (966) 018 - 01 - 89</p>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

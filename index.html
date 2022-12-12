@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/fav-icon.svg" type="image/x-icon">
+    <title>BEAUTY BAR</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
+</head>
+<body>
+    <div id="gray"><a href="#!" onclick="show('none')"></a></div>
+    <header class="header">
+
+<!---------- ФОРМА записи ------php/send.php--->
+
+<form id="record-form-id" class="record-form" action="" method="post">
+    <div class="record-form__container d-flex flex-wrap">
+        <div class="record-form__cross" onclick="show('none')"><a href="#!"><img src="images/cross.svg" alt=""></a></div>
+        <legend class="legend">Оставьте свой номер</legend>
+        <p class="legend__call-back">Мы перезвоним и запишем вас на удобное время</p>
+        <input name="name" required class="input-name"type="text" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" title="Введите свое имя русскими или латинскими буквами">
+        <input name="phone" required class="input-phone" type="tel" placeholder="Телефон в формате 8-ХХХ-ХХХ-ХХ-ХХ" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="Введите номер телефона в формате 8-ХХХ-ХХХ-ХХ-ХХ">
+        <div class="choose-service d-flex flex-sb">
+            <p>Я хочу записаться на:</p>
+            <select name="" id="">
+                <option class="choose-roduct" value="stарт"><p>...</p></option>
+                <option class="choose-roduct" value="education1"><p>Обучение по курсу  "Итальянское наращивание волос"</p></option>
+                <option class="choose-roduct" value="education2">Обучение по курсу  "Ламинирование и ботокс натуральных ресниц"</option>
+                <option class="choose-roduct" value="hair-coloring">Окрашивание волос</option>
+                <option class="choose-roduct" value="hair-extension">Наращивание волос</option>
+                <option class="choose-roduct" value="eyelash-extension">Наращивание ресниц</option>
+                <option class="choose-roduct" value="brows">Коррекция, окрашивание бровей</option>
+                <option class="choose-roduct" value="nails">Маникюр/педикюр</option>
+            </select>
+        </div>
+        <div class="record-form__button-enroll d-flex flex-wrap">
+            <!-- <div class="button-enroll record-form__button d-flex" onclick=""><p><a href="#!">Отправить</a></p></div> -->
+            <input class="button-enroll record-form__button" type="submit" value="Отправить">
+            <p id="text-info" class="button-enroll__information">Нажимая на кнопку «Отправить», вы соглашаетесь на обработку персональных данных</p>
+            <p id="text-button-click" class="button-enroll__information-button-click">Данные успешно отправлены! Мы перезвоним вам в течение 15 минут.</p>
+        </div>
+    </div>
+</form>
+<!-- Шапка сайта -->
+        <div class="header-top container d-flex flex-sb">
+            <div class="header-top__contacts d-flex flex-sb">
+                <a href="#how-find-us-widget"><p  id="header-logo">Нижний Новгород, ул. Бурденко, 33</p></a>
+                <p class="phone-media">+7 (966) 018 - 01 - 89</p>   
+            </div>
+            <div class="header-top__social-network">
+                <a href="https://vk.com/public211470536"><img src="images/vk-ircled.svg" alt=""></a>
+                <a href="https://viber.click/79960180189"><img src="images/viber.svg" alt=""></a>
+                <a href="https://api.whatsapp.com/send/?phone=79960180189&text&type=phone_number&app_absent=0"><img src="images/whatsapp.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="header-bottom container d-flex flex-sb">
+            <div class="header-bottom-logo"><a href="#!"><img src="images/logo.png" alt=""></a></div>
+            <!-- <a href="#!"><img src="images/logo.png" alt=""></a> -->
+            <ul class="header-menu d-flex flex-sb">
+                <li><a href="#services-and-prices">Услуги</a></li>
+                <li><a href="courses.html">Курсы</a></li>
+                <li><a href="we.html">О нас</a></li>
+                <li><a href="#how-find-us-widget">Контакты</a></li>
+            </ul>
+<!------------КНОПКА записи----------->
+            <div class="button-enroll d-flex" onclick="show('block')"><p><a href="#!">Записаться</a></p></div>
+
+<!------------БУРГЕР + меню-----------> 
+            <div class="header-burger d-flex" id="burger-active">
+                <div class="burger-active"><a href="#!" onclick="showBurger('none')"><img src="images/burger-white.svg" alt="" ></a></div>
+                <ul class="menu-media d-flex flex-sb">
+                    <li><a href="#!">Услуги</a></li>
+                    <li><a href="#!">Курсы</a></li>
+                    <li><a href="#!">О нас</a></li>
+                    <li><a href="#!">Контакты</a></li>
+                </ul>
+                <div class="header-top__social-network-media d-flex flex-sb">
+                    <a href="https://vk.com/public211470536"><img src="images/vk-ircled.svg" alt=""></a>
+                    <a href="https://viber.click/79960180189"><img src="images/viber.svg" alt=""></a>
+                    <a href="https://api.whatsapp.com/send/?phone=79960180189&text&type=phone_number&app_absent=0"><img src="images/whatsapp.svg" alt=""></a>
+                </div>
+            </div> 
+            <div class="burger-inactive">
+                <a href="#!"><img src="images/burger-pink.svg" alt="" onclick="showBurger('block')"></a>
+            </div>        
+</div>
+    </header>
+    <!-- banners__container -->
+    <section class="banners d-flex"> 
+        <!-- <div >
+            
+        </div> -->
+        <div class="banners__container  container d-flex" id="slider">
+            <div id="polosa" class="d-flex">
+ <!-----1----- Первый баннер ------------>
+                <div class="banners first-banner d-flex">
+                    <div class="first-banner__benefits-left">
+                        <div class="first-banner__benefits">
+                            <p class="first-banner__benefits first-banner__benefits--1">Самый удобный</p>
+                            <p class="first-banner__benefits first-banner__benefits--2">салон красоты</p>
+                        </div>
+                        <div class="first-banner__text">
+                            <p>Время в нашем салоне летит незаметно...</p>
+                            <p>В мягких и комфортных креслах <br> для наращивания ресниц ♥</p>
+                        </div>
+                    </div>
+                    <div  class="first-banner__img"><img src="images/armchair.png" alt=""></div>
+                </div>
+<!-------2---- Второй баннер ------------->
+                <div class="banners second-banner d-flex">
+                    <div class="second-banner__container d-flex flex-wrap">
+                        <div class="second-banner__img"><img src="images/bayytr2-img.png" alt=""></div>
+                        <div class="second-banner__content"> 
+                            <div class="second-banner__text">
+                                <p class="second-banner__text--1">Курс:</p>
+                                <p class="second-banner__text--2">Итальянское <br> наращивание волос</p>
+                            </div>
+                            <div class="second-banner__button d-flex"> <a href="cours_lamination.html"><p>Получи новую классную профессию за 2 дня</p></a> </div>
+                        </div>
+                    </div>
+                </div>
+<!-------3---- Третий баннер -------------->
+                <div class="banners third-banner d-flex">
+                    <div></div>
+                    <img src="images/banner3_img.png" alt="">
+                    <div class="third-banner__content">
+                        <p class="third-banner__content-media"> <span>Курс:</span> Ламинирование и <br> ботокс натуральных ресниц</p>
+                        <div class="second-banner__button d-flex"> <a href="#!"><p>Получи новую классную профессию за 2 дня</p></a> </div>
+                    </div>
+                </div>
+            </div>
+ 
+        </div>
+    </section>
+
+<!--  <button id="slider-left">left</button> Кнопка для автослайдера, возможно еще будет н6ужна -->
+
+<div class="button-up"><a href=""><img src="images/button-up.png" alt=""></a></div>   
+
+<!-- Услуги и цены -->
+
+    <section class="services-and-prices d-flex">
+        
+        <div class="services-and-prices__item container">
+            <h2 id="services-and-prices">Услуги и цены</h2>
+            <div class="services-and-prices__menu d-flex flex-wrap flex-sb">
+                <div>
+                    <p class="services-name">Окрашивание волос</p>
+                    <img src="images/services-hair-coloring.jpg" alt="">
+                    <p class="services-more"><a href="#!">Подробнее</a></p>
+                </div>
+                <div>
+                    <p class="services-name">Наращивание волос</p>
+                    <img src="images/services-hair-extension.jpg" alt="">
+                    <p class="services-more"><a href="#!">Подробнее</a></p>
+                </div>
+                <div>
+                    <p class="services-name">Уход за волосами</p>
+                    <img src="images/services-hair-care.jpg" alt="">
+                    <p class="services-more"><a href="#!">Подробнее</a></p>
+                </div>
+                <div>
+                    <p class="services-name">Наращивание ресниц</p>
+                    <img src="images/services-eyelash-extension.jpg" alt="">
+                    <p class="services-more"><a href="#!">Подробнее</a></p>
+                </div>
+                <div>
+                    <p class="services-name">Брови</p>
+                    <img src="images/services-brows.jpg" alt="">
+                    <p class="services-more"><a href="#!">Подробнее</a></p>
+                </div>
+                <div>
+                    <p class="services-name">Маникюр / Педикюр</p>
+                    <img src="images/services-nails.jpg" alt="">
+                    <p class="services-more"><a href="#!">Подробнее</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!------- ОБУЧЕНИЕ-------->
+    
+    <section class="education d-flex flex-wrap">
+        <div class="education-media container">
+            <h2 class="container">Мы можем научить вас <br> всему</h2>
+            <div class="education-banner__enroll d-flex">
+                <div class="education-banner__img d-flex">
+                    <img src="images/education-banner-team.png" alt="">
+                </div>
+                <div class="education-banner__text">
+                    <div class="education-banner__text-banner">
+                        <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта. </p>
+                        <p>Дальнейшее развитие различных форм деятельности.</p>
+                    </div>
+                    <div class="button-enroll d-flex"><p><a href="#!">Записаться</a></p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Наша команда -->
+
+    <section class="our-team d-flex">
+        <div class="our-team__team container">
+            <h2>Наша команда</h2>
+            <div class="our-team__photos d-flex flex-sb flex-wrap">
+                <div class="our-team__photos-media">
+                    <p class="our-team__names">Яна</p>
+                    <img src="images/master-yana.jpg" alt="">
+                    <p class="our-team__masters">Мастер по наращиванию <br> ресниц</p>
+                </div>
+                <div>
+                    <p class="our-team__names">Евгения</p>
+                    <img src="images/master-evgeniya.jpg" alt="">
+                    <p class="our-team__masters">Мастер<br>ногтевого сервиса</p>
+                </div>
+                <div >
+                    <p class="our-team__names">Влада</p>
+                    <img src="images/master-vlada.jpg" alt="">
+                    <p class="our-team__masters">Мастер по наращиванию <br> волос</p>
+                </div>
+                <div>
+                    <p class="our-team__names">Ирина</p>
+                    <img src="images/master-irina.jpg" alt="">
+                    <p class="our-team__masters">Мастер маникюра и <br> педикюра</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Отзывы -->
+    <section class="reviews d-flex">
+        <div class="reviews-media container d-flex">
+            <div class="reviews__text ">
+                <h2>Отзывы</h2>
+                <p>Реальные отзывы о нашем салоне вы можете посмотреть на Яндекс картах.</p>
+                <p>Если вы уже являетесь нашим клиентом, мы будем рады новому отзыву.</p>
+            </div>
+            <div class="reviews-widget" > <!-- Виджет с отзывами -->
+                <iframe style="width:100%;height:100%;border:1px solid #e6e6e6;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/221694220915?comments"></iframe><a href="https://yandex.ru/maps/org/beauty_bar/221694220915/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Beauty Bar на карте Нижнего Новгорода — Яндекс Карты</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Работы наших мастеров -->
+    <section class="works-our-masters d-flex ">
+        <div class="swiper works-our-masters__item container d-flex flex-wrap js-slider-container">
+            <h2>Работы наших мастеров</h2>
+            <a class="left-arrow js-btn--prev" href="#!"><img src="images/arrow-l.png" alt=""></a>
+            <a class="right-arrow js-btn--next" href="#!"><img src="images/arrow-r.png" alt=""></a>
+            <div class="swiper-wrapper carousel_photos d-flex swiper-wrapper js-slider-track">
+                <div class="js-slider__item"><a href="#!"><img src="images/02works.jpg" alt=""></a></div>
+                <!-- <div class="carousel_photos"><img src="images/01works.jpg" alt=""></div> -->
+                <div class="js-slider__item"><a href="#!"><img src="images/03works.jpg" alt=""></a></div>
+                <div class="js-slider__item"><a href="#!"><img src="images/04works.jpg" alt=""></a></div>
+                <div class="js-slider__item"><a href="#!"><img src="images/08works.jpg" alt=""></a></div>
+                <div class="js-slider__item"><a href="#!"><img src="images/06works.jpg" alt=""></a></div>
+                <div class="js-slider__item"><a href="#!"><img src="images/07works.jpg" alt=""></a></div>
+                <div class="js-slider__item"><a href="#!"><img src="images/05works.jpg" alt=""></a></div>
+                <div class="js-slider__item"><a href="#!"><img src="images/09works.jpg" alt=""></a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Как нас найти -->
+    <section class="how-find-us d-flex">
+        <div class="how-find-us__content container d-flex flex-wrap">
+            <h2 id="how-find-us-widget">Как нас найти</h2>
+            <div class="how-find-us-media d-flex">
+                <div class="map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acb3495e075c4d1a33420054e0c8977aad8693ab702bb3ec4850583229c6ea633&amp;width=545&amp;height=465&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div> <!-- address phone -->
+                    <div class="how-find-us__contacts">
+                        <p class="p1">Наш адрес:</p>
+                        <p class="p2">г. Нижний Новгород, ул. Бурденко, 33</p>
+                    </div>
+                    <div class="how-find-us__contacts">
+                        <p class="p1">Телефон: </p>
+                        <p class="p2">+7 (966) 018 - 01 - 89</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Футер -->
+
+    <footer>
+        <div class="footer container d-flex flex-sb">
+            <ul class="footer_list d-flex">
+                <li><a href="#services-and-prices">Услуги</a></li>
+                <li><a href="courses.html">Курсы</a></li>
+                <li><a href="we.html">О нас</a></li>
+                <li><a href="#!">Контакты </a></li>
+            </ul>
+            <a class="footer-logo" href="#header-logo"><img src="images/logo2.png" alt=""></a>
+            <div class="footer-contacts d-flex">
+                <div class="footer-contacts__social-network">
+                    <a href="https://vk.com/public211470536"><img src="images/vk-ircled.svg" alt=""></a>
+                    <a href="https://viber.click/79960180189"><img src="images/viber.svg" alt=""></a>
+                    <a href="https://api.whatsapp.com/send/?phone=79960180189&text&type=phone_number&app_absent=0"><img src="images/whatsapp.svg" alt=""></a>
+                </div>
+                <p>+7 (966) 018 - 01 - 89</p>
+            </div>
+        </div>        
+    </footer>
+
+
+<!-- <div class="button-enroll d-flex" onclick=""><p><a href="#!">Записаться</a></p></div> -->
+<!-- JS -->
+    <script src="JS/app.js"></script>
+    <script src="JS/slider.js"></script>
+    <script src="JS/autoslider.js"></script>
+    <script src="JS/app-media.js"></script>
+</body>
+</html>
