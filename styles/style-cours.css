@@ -228,6 +228,16 @@ header {
     margin-bottom: 50px;
 }
 
+.benefit__block--item {
+    align-items: center;
+    height: 100px;
+}
+
+.benefit__block--item img {
+    width: 110px;
+    height: 110px;
+}
+
 .benefit__block--item p {
     margin-left: 37px;
     width: 340px;
