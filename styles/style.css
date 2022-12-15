@@ -325,23 +325,26 @@ span {
 /*----Обучение----*/
 
 .education {
-    height: 605px;
+    height: 456px;
     /* position: relative;
     bottom: 100px; */
+    background-color: #252525;
 }
 
-.education h2 {
+.education-h2 {
     height: 149px;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 47px;
+    background-color: #F5F5F5;
+    
 }
 
 
 .education-banner__enroll {
     justify-content: center;
-    background-color: #252525;
+    
 }
 
 .education-banner__text {
