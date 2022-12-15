@@ -62,69 +62,7 @@ p {
     font-family: 'Inter';
     font-weight: 400;
     font-size: 20px;
-    z-index: 1;
 }
-
-/* Курсы */
-header {
-    background-color: #252525;
-    height: 200px;
-    z-index: 100;
-}
-
-.header__topmenu {
-    justify-content: space-between;
-    align-items: center;
-    height: 46px;
-    color: #FFFFFF;
-    padding-top: 27px;
-}
-
-.header__topmenu a {
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.header__topmenu p {
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-}
-
-.messengers {
-    justify-content: space-between;
-    width: 225px;
-
-}
-
-.header__mainmenu {
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    padding-top: 40px;
-}
-
-.header__hamburger {
-    display: none;
-}
-
-.header__mainmenu--list {
-    justify-content: space-between;
-    width: 420px;
-    list-style: none;
-}
-
-.header__mainmenu--list a {
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    color: #ffffff;
-    text-decoration: none;
-}
-
 
 /* Страница все курсы */
 .courses {
@@ -179,12 +117,10 @@ header {
 .cours__mainbanner--image {
     position: absolute;
     left: 230px;
-    z-index: 1;
     height: 570px;
 }
 
 .cours__mainbanner--description {
-    z-index: 100;
     position: absolute;
 }
 
@@ -405,48 +341,6 @@ header {
     left: 35px;
     top: 15px;
 }
-
-/* Футер */
-footer {
-    height: 266px;
-    background-color: #252525;
-}
-
-.footer__columns {
-    justify-content: space-between;
-    align-items: center;
-    height: 266px;
-}
-
-.footer__columns--left {
-    gap: 20px;
-    height: 156px;
-    list-style: none;
-}
-
-.footer__columns--left a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 20px;
-    
-}
-
-.footer__columns--right {
-    gap: 50px;
-    height: 156px;
-    
-}
-
-.footer__columns--right p {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 20px;
-    color: #FFFFFF;
-    text-align: right;
-}
-
 
 /*прибиваем футер*/
 * {

@@ -30,7 +30,7 @@ ul {
 }
 
 header {
-    height: 238px;
+    height: 200px;
     background-color: #252525;
     align-items: center;
     justify-content: center;
@@ -43,10 +43,11 @@ header {
 }
 
 .header-top p {
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 20px;
+    line-height: 24px;
     color: #FFFFFF;
 }
 
@@ -58,16 +59,14 @@ header {
     text-decoration: none;
 }
 
+
 .header-top__social-network a {
-    margin-left: 20px;
+    margin-left: 45px;
 }
 
 .header-bottom {
     height: 60px;
     align-items: center;
-}
-
-.header-bottom {
     position: relative;
     right: 6px;
 }
@@ -90,13 +89,14 @@ header {
     width: 240px;
     height: 60px;
     justify-content: center;
+    align-items: center;
     border: 1px solid #FB37FF;
-    box-shadow: 5px 5px 15px #FB37FF, -5px -5px 15px #FB37FF;
+    box-shadow: 0px 0px 10px #fb37ff;
 }
 
 .button-enroll:hover {
     border: 1px solid white;
-    box-shadow: 5px 5px 15px white, -5px -5px 15px  white;
+    box-shadow: 0px 0px 10px white;
 }
 
 .button-enroll:hover a {
@@ -557,7 +557,7 @@ footer {
 }
 
 .footer_list {
-    height: 144px;
+    height: 156px;
     list-style: none;
     flex-direction: column;
     justify-content: space-between;
@@ -589,7 +589,7 @@ footer {
 }
 
 .footer-contacts p {
-    margin-top: 84px;
+    margin-top: 83px;
 }
 
 /*******Форма записи*********/
