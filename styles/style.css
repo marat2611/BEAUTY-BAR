@@ -53,10 +53,16 @@ header {
 
 .header-top__contacts {
     width: 851px;
+    align-items: center;
 }
 
 .header-top__contacts a {
     text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
 }
 
 
@@ -593,6 +599,15 @@ footer {
 
 .footer-contacts p {
     margin-top: 83px;
+}
+
+.footer-contacts a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 /*******Форма записи*********/
