@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/media.css">
 </head>
 <body>
-    <div id="gray"><a href="#!" onclick="show('none')"></a></div>
+    <div id="gray" onclick="show('none')"><a href="#!" ></a></div>
     <header class="header">
 
 <!---------- ФОРМА записи ------php/send.php--->
@@ -47,7 +47,7 @@
         <div class="header-top container d-flex flex-sb">
             <div class="header-top__contacts d-flex flex-sb">
                 <a href="#how-find-us-widget"><p  id="header-logo">Нижний Новгород, ул. Бурденко, 33</p></a>
-                <a href="tel:+79660180189">+7 (966) 018 - 01 - 89</a>
+                <a href="tel:+79660180189" class="header-phone">+7 (966) 018 - 01 - 89</a>
                 <!-- <p class="phone-media">+7 (966) 018 - 01 - 89</p>    -->
             </div>
             <div class="header-top__social-network">
@@ -286,7 +286,8 @@
                     </div>
                     <div class="how-find-us__contacts">
                         <p class="p1">Телефон: </p>
-                        <p class="p2">+7 (966) 018 - 01 - 89</p>
+                        <a href="tel:+79660180189">+7 (966) 018 - 01 - 89</a>
+                        <!-- <p class="p2">+7 (966) 018 - 01 - 89</p> -->
                     </div>
                 </div>
             </div>
@@ -311,7 +312,7 @@
                     <a href="https://api.whatsapp.com/send/?phone=79960180189&text&type=phone_number&app_absent=0"><img src="images/whatsapp.svg" alt=""></a>
                 </div>
                 <!-- <p>+7 (966) 018 - 01 - 89</p> -->
-                <a href="tel:+79660180189">+7 (966) 018 - 01 - 89</a>
+                <a href="tel:+79660180189" class="header-phone">+7 (966) 018 - 01 - 89</a>
             </div>
         </div>        
     </footer>

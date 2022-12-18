@@ -29,6 +29,10 @@
         z-index: 110;
     }
 
+    .header-phone {
+        display: none;
+    }
+
     .burger-inactive {
         display: block;
         position: absolute;
@@ -272,6 +276,16 @@
         left: 60px;
     }
 
+    .header-top__contacts {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .header-phone {
+        display: block;
+    }
+
     .header-top__contacts a p {
         font-size: 16px;
     }
@@ -291,10 +305,7 @@
         position: relative;
         right: 62px;
     }
-
-    /*********БАННЕРЫ***********/
-
-  
+ 
 
     /*********ОБУЧЕНИЕ**********/
 
@@ -392,8 +403,14 @@
     }
 
     footer {
-        height: 325px;
+        height: auto;
     }
+
+    .header-phone {
+        margin-right: 10px;
+        margin-bottom: 40px;
+    }
+
     .footer {
         flex-direction: column;
         height: auto;
