@@ -123,7 +123,7 @@ header {
 /*----БАННЕРЫ----*/
 .banners__container {
     overflow: hidden;
-    z-index: 50;
+    
 }
 
 .banners {
@@ -177,6 +177,8 @@ header {
     position: relative;
     right: 110px;
     bottom: 100px;
+    transform: scale(0.8,0.8);
+    
 }
 
 .second-banner {
