@@ -1,5 +1,7 @@
 @media screen and (max-width: 1100px) {
 
+
+    /* Общие */
     h1 {
         font-family: 'Raleway';
         font-style: normal;
@@ -16,6 +18,16 @@
         line-height: 47px;
     }
 
+    p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    /* Хедер */
     header {
         height: 180px;
     }
@@ -76,7 +88,7 @@
         text-align: center;
         gap: 50px;
     }
-
+/* Страница Курсы Основной Блок */
     .courses__block--center {
         margin-top: 150px;
         display: block;
@@ -104,11 +116,103 @@
         height: auto;
     }
 
+
+    /* Страница Ламинирование */
+
+    /* Главный баннер */
+    .cours__mainbanner {
+        height: 442px;
+
+    }
+
+    .cours__mainbanner--image {
+        height: 442px;
+        position: absolute;
+        left: 110px;
+        
+    }
+    
+
+    .cours__mainbanner--description h1 {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        margin-top: 25px;
+        width: 528px;
+    }
+
+
+    /* Преимущества */
+    .benefit__block h2 {
+        margin-top: 150px;
+    }
+
+    .benefit__block--item img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .benefit__items {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    .benefit__block--item{
+        
+        width: 400px;
+    }
+
+    /* Преподаватель */
+    .teacher {
+        margin-top: 150px;
+    }
+
+
+    /* Расписание */
+    .timetable__block--center {
+        margin-top: 100px;
+    }
+
+
+    /* Записаться на курс */
+    .signup {
+        margin-top: 100px;
+    }
+    
+    /* Форма записи на курс */
+    .form__block {
+        flex-direction: column;
+        height: auto;
+    }
+
+
+    .form__background p {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        margin-top: 50px;
+    
+    }
+
+    .form__button button {
+        margin-top: 0;
+    }
+
+    .form__item--right {
+        margin-top: 50px;
+    }
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 610px) {
 
+    /* Общие */
     h1 {
         font-family: 'Raleway';
         font-style: normal;
@@ -133,6 +237,7 @@
         line-height: 19px;
     }
 
+    /* Хедер */
     .header-top p {
         font-family: 'Inter';
         font-style: normal;
@@ -207,13 +312,14 @@
         gap: 50px;
     }
 
-
+/* Блок курсы */
     .courses__item--coloumns {
         display: flex;
         flex-direction: column;
         gap: 50px;
     }
 
+    /* Футер */
     .footer {
         height: 325px;
         flex-direction: column;

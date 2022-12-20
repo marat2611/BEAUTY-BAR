@@ -7,8 +7,9 @@
     <title>Курс: Ламинирование и ботокс натуральных ресниц</title>
 
     <!-- Подключаем css -->
+    <link rel="stylesheet" href="styles/hamburgers.css">
     <link rel="stylesheet" href="styles/style-cours.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-cours.css">
 
     <!-- Шрифты -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,13 +73,28 @@
         </div>
         <div class="header-bottom container d-flex flex-sb">
             <div class="header-bottom-logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
-            <!-- <a href="#!"><img src="images/logo.png" alt=""></a> -->
-            <ul class="header-menu d-flex flex-sb">
-                <li><a href="#services-and-prices">Услуги</a></li>
-                <li><a href="courses.html">Курсы</a></li>
-                <li><a href="we.html">О нас</a></li>
-                <li><a href="#how-find-us-widget">Контакты</a></li>
-            </ul>
+            
+            <!-- Hamburger -->
+            <button class="header__toggle hamburger hamburger--squeeze" type="button" onclick="this.classList.toggle('is-active')">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+            <nav class="mobile-menu">
+                <ul class="header-menu d-flex flex-sb">
+                    <li><a href="#services-and-prices">Услуги</a></li>
+                    <li><a href="courses.html">Курсы</a></li>
+                    <li><a href="we.html">О нас</a></li>
+                    <li><a href="#how-find-us-widget">Контакты</a></li>
+                </ul>
+                <div class="social-network">
+                    <a href="https://vk.com/public211470536"><img src="images/vk-ircled.svg" alt=""></a>
+                    <a href="https://viber.click/79960180189"><img src="images/viber.svg" alt=""></a>
+                    <a href="https://api.whatsapp.com/send/?phone=79960180189&text&type=phone_number&app_absent=0"><img src="images/whatsapp.svg" alt=""></a>
+                </div>
+            </nav>
+
 <!------------КНОПКА записи----------->
             <div class="button-enroll d-flex" onclick="show('block')"><p><a href="#!">Записаться</a></p></div>
     </header>
@@ -174,7 +190,7 @@
         <div class="form__background">
             <div class="container">
                 <div class="form__block d-flex">
-                    <p class="form__item--left">Стоимость курса всего <br><br><span>8 000 ₽</span></p>
+                    <p class="form__item--left">Стоимость курса всего <br><span>8 000 ₽</span></p>
                     <form class="form__item--right" action="#" method="#">
                         <label class="form__feild d-grid">
                             <input class="form__input" type="text" placeholder="Имя" required>
