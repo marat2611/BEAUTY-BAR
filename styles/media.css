@@ -19,6 +19,14 @@
         display: none;
     }
 
+    #header-logo {
+        margin-left: 20px;
+    }
+
+    .header-bottom-logo {
+        margin-left: 20px;
+    }
+
     .header-burger {
         display: block;
         background-color: #252525;
@@ -31,6 +39,8 @@
 
     .header-phone {
         display: none;
+        position: relative;
+        right: 22px;
     }
 
     .burger-inactive {
@@ -102,11 +112,12 @@
 
     .our-team__photos-media {
         width: auto;
+        height: 100%;
     }
 
     .our-team__photos-media img {
-        width: auto;
-        height: auto;
+        width: 367px;
+        height: 367px;
     }
 
     .reviews {
@@ -173,7 +184,7 @@
 
     .button-up{
         left: 50%;
-        z-index: 75;
+        z-index: 95;
     }
 
     /*********БАННЕРЫ***********/
@@ -296,7 +307,7 @@
     }
 
     .header-bottom a img {
-        display: block;
+        /* display: block; */
         transform: scale(0.6,0.6);
         justify-content: stretch;
     }
@@ -377,6 +388,11 @@
         bottom: 200px;
     }
 
+    .our-team__photos-media {
+        width: auto;
+        height: auto;
+    }
+
     .reviews {
         height: auto;
     }
@@ -406,9 +422,8 @@
         height: auto;
     }
 
-    .header-phone {
-        margin-right: 10px;
-        margin-bottom: 40px;
+    .footer-contacts .header-phone {
+        margin-bottom: 55px;
     }
 
     .footer {
@@ -535,6 +550,7 @@
     }
 
     .reviews-widget {
-        height: 400px;
+        height: 700px;
+        width: 100%;
     }
 }
