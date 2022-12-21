@@ -13,6 +13,11 @@ body {
     
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 .d-flex {
     display: flex;
 }
@@ -186,18 +191,19 @@ header {
 
 /* Страница все курсы */
 .courses {
-    height: 1365px;
+    height: auto;
 }
 
 .courses__block--center {
     grid-template-columns: 1fr;
     align-items: center;
-    height: 1365px;
+    height: auto;
 }
 
 .courses__block--rows {
     display: grid;
     grid-gap: 100px;
+    margin: 150px 0;
 }
 
 .courses__item h2 {
@@ -462,7 +468,7 @@ header {
     top: 15px;
 }
 
-/*прибиваем футер*/
+/* прибиваем футер
 * {
     margin: 0;
     padding: 0;
@@ -488,7 +494,7 @@ main {
 
 footer {
     flex: 0 0 auto;
-}
+} */
 
 /*----Футер-----*/
 
