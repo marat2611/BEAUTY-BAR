@@ -5,64 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/fav-icon.svg" type="image/x-icon">
-    <title>BeautyBar Капсульное наращивание</title>
+    <title>BEAUTY BAR Капсульное наращивание</title>
 
+    <!-- Шрифты -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     
     <!-- подключаем стили -->
-    <link href="styles/hamburger.css" rel="stylesheet">
+    <link href="styles/hamburger-price.css" rel="stylesheet">
+    
     
     <link rel="stylesheet" href="styles/style-price.css">
     <link rel="stylesheet" href="styles/media-price.css">
 </head>
 <body>
-    <div id="gray"></div>
-    <!-- доработать форму (открывается сразу при открытии страницы) -->
-    <header class="header-menu container">
-       
-       
-        <!-- ШАПКА -->
-        <div class="top-menu d-flex">
-            <div class="top-menu__contacts">
-                <a href="index.html#how-find-us-widget"><p>Нижний Новгород, ул. Бурденко, 33</p></a>
-                <p class="top-menu__p">+7 (966) 018 - 01 - 89</p>
-            </div>
-            <div class="icons--prop"> <!-- убрать иконки в бургер -->
-                <a href="https://vk.com/public211470536"><img src="images/vk-ircled.svg" alt=""></a>
-                <a href="https://viber.click/79960180189"><img src="images/Viber.svg" alt=""></a>
-                <a href="https://wa.me/79960180189"><img src="images/WhatsApp.svg" alt=""></a>
-            </div>      
-        </div>
-        <div class="mein-menu">
-            <a href="index.html"><img class="logo" src="images/logo.svg" alt=""></a>
-            
-            <div class="mein-menu--burger">
-                <!-- меню-гамбургер -->
-                <button class="mein-menu__toggle hamburger hamburger--squeeze" type="button" onclick="this.classList.toggle('is-active')">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                    </button>
-                <!-- список меню -->
-                <nav class="mein-menu__nav">
-                    <ul class="mein-menu-list d-flex flex-sb">
-                        <li><a class="list--prop" href="index.html#services-and-prices">Услуги</a></li>
-                        <li><a class="list--prop" href="we.html">О нас</a></li>
-                        <li><a class="list--prop" href="courses.html">Курсы</a></li>
-                        <li><a class="list--prop" href="index.html#how-find-us-widget">Контакты</a></li>
-                    </ul>
-                </nav>
-                <!-- <form action="#" target="_blank">
-                    <button class="btn btn--activ">Записаться</button>
-                </form> -->
-                <div class="button-enroll d-flex" onclick="show('block')">
-                    <p><a href="#!">Записаться</a></p>
-                </div>
-            </div>
-        </div>
-    </header>
+    <div id="gray" onclick="show('none')"><a href="#!" ></a></div>
+    <header class="header">
+
+    <!---------- ФОРМА записи ------php/send.php--->
 
     <form id="record-form-id" class="record-form" action="" method="post">
         <div class="record-form__container d-flex flex-wrap">
@@ -73,8 +34,8 @@
             <input name="phone" required class="input-phone" type="tel" placeholder="Телефон в формате 8-ХХХ-ХХХ-ХХ-ХХ" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="Введите номер телефона в формате 8-ХХХ-ХХХ-ХХ-ХХ">
             <div class="choose-service d-flex flex-sb">
                 <p>Я хочу записаться на:</p>
-                <select name="choose-roduct" id="">
-                    <option class="choose-roduct" value="stарt"><p>...</p></option>
+                <select name="" id="">
+                    <option class="choose-roduct" value="stарт"><p>...</p></option>
                     <option class="choose-roduct" value="education1"><p>Обучение по курсу  "Итальянское наращивание волос"</p></option>
                     <option class="choose-roduct" value="education2">Обучение по курсу  "Ламинирование и ботокс натуральных ресниц"</option>
                     <option class="choose-roduct" value="hair-coloring">Окрашивание волос</option>
@@ -85,76 +46,118 @@
                 </select>
             </div>
             <div class="record-form__button-enroll d-flex flex-wrap">
-                <!-- <div class="button-enroll record-form__button d-flex" onclick=""><p><a href="#!">Отправить</a></p></div> -->
                 <input class="button-enroll record-form__button" type="submit" value="Отправить">
-                <p class="button-enroll__information">Нажимая на кнопку «Отправить», вы соглашаетесь на обработку персональных данных</p>
-                <p class="button-enroll__information-button-click">Данные успешно отправлены! Мы перезвоним вам в течение 15 минут.</p>
+                <p id="text-info" class="button-enroll__information">Нажимая на кнопку «Отправить», вы соглашаетесь на обработку персональных данных</p>
+                <p id="text-button-click" class="button-enroll__information-button-click">Данные успешно отправлены! Мы перезвоним вам в течение 15 минут.</p>
             </div>
         </div>
     </form>
+<!-- Шапка сайта -->
+        <div class="header-top container d-flex flex-sb">
+            <div class="header-top__contacts d-flex flex-sb">
+                <a href="#how-find-us-widget"><p  id="header-logo">Нижний Новгород, ул. Бурденко, 33</p></a>
+                <a href="tel:+79660180189" class="header-phone">+7 (966) 018 - 01 - 89</a>
+            </div>
+            <div class="header-top__social-network">
+                <a href="https://vk.com/public211470536"><img src="images/vk-ircled.svg" alt=""></a>
+                <a href="https://viber.click/79960180189"><img src="images/viber.svg" alt=""></a>
+                <a href="https://api.whatsapp.com/send/?phone=79960180189&text&type=phone_number&app_absent=0"><img src="images/whatsapp.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="header-bottom container d-flex flex-sb">
+            <div class="header-bottom-logo"><a href="#!"><img src="images/logo.png" alt=""></a></div>
+            <ul class="header-menu d-flex flex-sb">
+                <li><a href="#services-and-prices">Услуги</a></li>
+                <li><a href="courses.html">Курсы</a></li>
+                <li><a href="we.html">О нас</a></li>
+                <li><a href="#how-find-us-widget">Контакты</a></li>
+            </ul>
+         <!------------КНОПКА записи----------->
+            <div class="button-enroll d-flex" onclick="show('block')"><p><a href="#!">Записаться</a></p></div>
+
+         <!------------БУРГЕР + меню-----------> 
+            <div class="header-burger d-flex" id="burger-active">
+                <div class="burger-active"><a href="#!" onclick="showBurger('none')"><img src="images/burger-white.svg" alt="" ></a></div>
+                <ul class="menu-media d-flex flex-sb">
+                    <li><a href="#services-and-prices">Услуги</a></li>
+                    <li><a href="courses.html">Курсы</a></li>
+                    <li><a href="we.html">О нас</a></li>
+                    <li><a href="#how-find-us-widget">Контакты</a></li>
+                </ul>
+                <div class="header-top__social-network-media d-flex flex-sb">
+                    <a href="https://vk.com/public211470536"><img src="images/vk-ircled.svg" alt=""></a>
+                    <a href="https://viber.click/79960180189"><img src="images/viber.svg" alt=""></a>
+                    <a href="https://api.whatsapp.com/send/?phone=79960180189&text&type=phone_number&app_absent=0"><img src="images/whatsapp.svg" alt=""></a>
+                </div>
+            </div> 
+            <div class="burger-inactive">
+                <a href="#!"><img src="images/burger-pink.svg" alt="" onclick="showBurger('block')"></a>
+            </div>        
+        </div>
+    </header>
     
-    <!-- КОНТЕНТ -->
+    <!-- КОНТЕНТ ПРАЙС -->
     <section class="price container">
         <h1>Капсульное наращивание волос<br><span class="title-textprop">(100 грамм 120-220 капсул)</span></h1>
         <div class="price-block">
             <div class="price-item price-item--padding">
-                <h2 class="price-block--name price-block--name-size">Маникюр<br>без покрытия</h2>
-                <div class="price-block--img-prop"></div>
-                <p class="price-block--price">500 ₽</p>
+                <h2 class="price-block--name price-block--name-size">Наращивание<br>до 100 грамм</h2>
+                <img class="price-block--img-prop" src="images/extension-1.jpg" alt="">
+                <p class="price-block--price">2500 ₽</p>
             </div>
             <div class="price-item price-item--padding">
-                <h2 class="price-block--name price-block--name-size">Маникюр +<br>однотонное покрытие</h2>
-                <div class="price-block--img-prop"></div>
+                <h2 class="price-block--name price-block--name-size">Капсуляция<br>до 100 грамм</h2>
+                <img class="price-block--img-prop" src="images/extension-1.jpg" alt="">
                 <p class="price-block--price">1000 ₽</p>
             </div>
             <div class="price-item price-item--padding">
-                <h2 class="price-block--name price-block--name-size">Наращивание ногтей</h2>
-                <div class="price-block--img-prop"></div>
-                <p class="price-block--price">1800 ₽</p>
+                <h2 class="price-block--name price-block--name-size">Коррекция<br>до 100 грамм в 2 дня</h2>
+                <img class="price-block--img-prop" src="images/extension-1.jpg" alt="">
+                <p class="price-block--price">4000 ₽</p>
             </div>
             <div class="price-item price-item--padding">
-                <h2 class="price-block--name price-block--name-size">Ремонт ногтя</h2>
-                <div class="price-block--img-prop"></div>
-                <p class="price-block--price">50 ₽</p>
+                <h2 class="price-block--name price-block--name-size">Коррекция<br>до 100 грамм в 1 день</h2>
+                <img class="price-block--img-prop" src="images/extension-1.jpg" alt="">
+                <p class="price-block--price">4500 ₽</p>
             </div>
         </div>
-        <h1 class="text-margin">Педикюр</h1>
+        <h1 class="text-margin">Ленточное наращивание</h1>
         <div class="price-block">
             <div class="price-item price-item--padding">
-                <h2 class="price-block--name price-block--name-size">Педикюр<br>без покрытия</h2>
-                <div class="price-block--img-prop"></div>
-                <p class="price-block--price">1000 ₽</p>
+                <h2 class="price-block--name price-block--name-size">Изготовление лент +<br>наращивание 100 гр</h2>
+                <img class="price-block--img-prop" src="images/extension-2.jpg" alt="">
+                <p class="price-block--price">3000 ₽</p>
             </div>
             <div class="price-item price-item--padding">
-                <h2 class="price-block--name price-block--name-size">Педикюр<br>с покрытием гель-лак</h2>
-                <div class="price-block--img-prop"></div>
-                <p class="price-block--price">1500 ₽</p>
+                <h2 class="price-block--name price-block--name-size">Коррекция лент</h2>
+                <img class="price-block--img-prop" src="images/extension-2.jpg" alt="">
+                <p class="price-block--price">2500 ₽</p>
             </div>
         </div>
     </section>
-     <!-- ПОДВАЛ -->
-     <footer class="footer container">
-        <div class="footer-prop d-flex flex-sb">
-            <nav class="footer-left flex-sb">
-                <ul class="footer-left__list">
-                    <li><a class="list--prop" href="index.html#services-and-prices">Услуги</a></li>
-                    <li><a class="list--prop" href="we.html">О нас</a></li>
-                    <li><a class="list--prop" href="courses.html">Курсы</a></li>
-                    <li><a class="list--prop" href="index.html#how-find-us-widget">Контакты</a></li>
-                </ul>
-                <a class="footer-logo" href="index.html"><img src="images/logo-footer.svg" alt=""></a>    
-            </nav>
-            
-            <div class="footer-right">
-                <div class="icons-footer--prop">
+
+    <!-- ПОДВАЛ -->
+    <footer>
+        <div class="footer container d-flex flex-sb">
+            <ul class="footer_list d-flex">
+                <li><a href="#services-and-prices">Услуги</a></li>
+                <li><a href="courses.html">Курсы</a></li>
+                <li><a href="we.html">О нас</a></li>
+                <li><a href="#!">Контакты </a></li>
+            </ul>
+            <a class="footer-logo" href="#header-logo"><img src="images/logo2.png" alt=""></a>
+            <div class="footer-contacts d-flex">
+                <div class="footer-contacts__social-network">
                     <a href="https://vk.com/public211470536"><img src="images/vk-ircled.svg" alt=""></a>
-                    <a href="https://viber.click/79960180189"><img src="images/Viber.svg" alt=""></a>
-                    <a href="https://wa.me/79960180189"><img src="images/WhatsApp.svg" alt=""></a>
+                    <a href="https://viber.click/79960180189"><img src="images/viber.svg" alt=""></a>
+                    <a href="https://api.whatsapp.com/send/?phone=79960180189&text&type=phone_number&app_absent=0"><img src="images/whatsapp.svg" alt=""></a>
                 </div>
-                <p>+7 (966) 018 - 01 - 89</p>
+                <a href="tel:+79660180189" class="header-phone">+7 (966) 018 - 01 - 89</a>
             </div>
-        </div>
+        </div>        
     </footer>
+
     <script src="JS/app.js"></script>
+    <script src="JS/app-media.js"></script>
 </body>
 </html>
