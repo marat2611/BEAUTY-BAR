@@ -235,7 +235,7 @@ header {
 .cours__mainbanner {
     height: 570px;
     background-color: #252525;
-    
+    overflow-x: hidden;
 } 
 
 .cours__mainbanner--background {
@@ -330,12 +330,14 @@ header {
 .teacher {
     height: 582px;
     background-color: #252525;
+    overflow-x: hidden;
 }
 
 .teacher__block {
     align-items: center;
     justify-content: space-between;
     height: 582px;
+    justify-content: center;
 }
 
 .teacher__item--left h2 {
