@@ -290,6 +290,7 @@
 
     .teacher__block {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .teacher__item--left {
