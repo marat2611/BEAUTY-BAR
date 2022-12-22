@@ -1,3 +1,43 @@
+@media screen and (max-width: 1100px) {
+   .header-top__social-network {
+        display: none;
+   }
+
+   .header-menu {
+        display: none;
+   }
+
+   .header-phone {
+    display: none;
+   }
+
+   .header-bottom  .button-enroll {
+        display: none;
+   }
+
+   .header-bottom {
+    width: 100%;
+}
+
+   .burger-inactive {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+    .header-burger {
+        background-color: #252525;
+    }
+
+    .services-and-prices {
+        height: 100%;
+    }
+
+    footer {
+        height: 100%;
+    }
+}
+
 @media screen and (max-width: 744px) {
     .phone-media {
         display: none;
@@ -60,6 +100,8 @@
 
     .education-h2 {
         margin-bottom: 50px;
+        width: 744px;
+
     }
 
     .education {
@@ -182,6 +224,10 @@
         width: auto;
     }
 
+    .footer .header-phone {
+        display: block;
+    }
+
     .button-up{
         left: 50%;
         z-index: 95;
@@ -214,9 +260,10 @@
         top: -40px;
     }
 
-    .first-banner__text {
+    /* .first-banner__text {
         left: -200px;
-    }
+        width: 330px;
+    } */
 
     .first-banner__text {
         left: -240px;
@@ -254,12 +301,19 @@
         right: 0;
         left: -575px;
         bottom: 30px;
+        width: 650px;
     }
 
     .third-banner__content-media {
-        font-size: 48px;
+        font-size: 40px;
         position: relative;
         right: 20px;
+        width: 550px;
+    }
+
+    .third-banner .second-banner__button {
+        position: relative;
+        top: -150px;
     }
 
     .left-arrow {
@@ -273,7 +327,54 @@
     }    
 }
 
+@media screen and (max-width: 420px) {
+    .header-top__contacts {
+        width: auto;
+        height: 100%;
+        flex-direction: column;
+    }
 
+    .header-phone {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .footer {
+        height: 100%;
+        width: auto;
+        flex-direction: column;
+    }
+
+    .footer_list {
+        margin-top: 20px;   
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .footer_list li {
+        margin-right: 20px;
+    }
+
+    .footer-logo {
+        position: relative;
+        left: -10px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .footer-contacts__social-network {
+        position: relative;
+        right: 30px;
+        margin-bottom: 20px;
+    }
+
+    .footer-contacts .header-phone {
+        position: relative;
+        right: 40px;
+        margin-bottom: 20px;
+    }
+}
 
 @media screen and (max-width: 320px) {
 
@@ -319,6 +420,11 @@
  
 
     /*********ОБУЧЕНИЕ**********/
+
+    .services-and-prices__menu img {
+        width: 320px;
+        height: 320px;
+    }
 
     .education {
         height: auto;
@@ -393,6 +499,11 @@
         height: auto;
     }
 
+    .our-team__photos img {
+        width: 320px;
+        height: 320px;
+    }
+
     .reviews {
         height: auto;
     }
@@ -410,9 +521,27 @@
         font-size: 16px;
     }
 
+    .how-find-us-main {
+        width: 320px;
+    }
+
+    #how-find-us-widget {
+        width: 320px;
+    }
+
+    .how-find-us-widget-map {
+        width: 320px;
+    }
+
+    .map iframe {
+        width: 320px;
+        height: 400px;
+    }
+
     .footer_list {
         display: none;
     }
+    
 
     .footer-contacts p {
         display: none;
@@ -518,6 +647,7 @@
         width: 328px;
         height: 72px;
         right: 100px;
+        position: relative;
         top: 75px;
     }
 
