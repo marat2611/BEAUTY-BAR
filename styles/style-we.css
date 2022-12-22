@@ -26,7 +26,7 @@ footer {
 }
 /* закончили прибивать*/
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: auto;
 }
 
@@ -54,7 +54,8 @@ ul {
 /*хедер*/
 
 header {
-    height: 238px;
+    padding: 0 20px;
+    height: 200px;
     background-color: #252525;
     align-items: center;
     justify-content: center;
@@ -67,31 +68,36 @@ header {
 }
 
 .header-top p {
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 20px;
+    line-height: 24px;
     color: #FFFFFF;
 }
 
 .header-top__contacts {
     width: 851px;
+    align-items: center;
 }
 
 .header-top__contacts a {
     text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
 }
 
+
 .header-top__social-network a {
-    margin-left: 20px;
+    margin-left: 45px;
 }
 
 .header-bottom {
     height: 60px;
     align-items: center;
-}
-
-.header-bottom {
     position: relative;
     right: 6px;
 }
@@ -116,12 +122,12 @@ header {
     justify-content: center;
     align-items: center;
     border: 1px solid #FB37FF;
-    box-shadow: 5px 5px 15px #FB37FF, -5px -5px 15px #FB37FF;
+    box-shadow: 0px 0px 10px #fb37ff;
 }
 
 .button-enroll:hover {
     border: 1px solid white;
-    box-shadow: 5px 5px 15px white, -5px -5px 15px  white;
+    box-shadow: 0px 0px 10px white;
 }
 
 .button-enroll:hover a {
@@ -140,6 +146,7 @@ header {
 /*о нас*/
 
 .about-us {
+    padding: 0 20px;
     margin-top: 140px;
 }
 
@@ -149,7 +156,7 @@ header {
 }
 
 .about-us__text {
-    grid-template-rows: 0.5fr 60px 0.5fr 1fr;
+    grid-template-rows: 0.5fr 0.25fr 0.5fr 1fr;
 }
 
 .master-yana-img {
@@ -183,13 +190,14 @@ header {
 /*----Наша команда----*/
 
 .our-team {
+    padding: 0 20px;
     margin-top: 140px;
     height: 505px;
     align-items: flex-start;
 }
 
 .our-team__team h2 {
-    width: 1140px;
+    max-width: 1140px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -199,7 +207,7 @@ header {
 }
 
 .our-team__photos {
-    width: 1142px;
+    max-width: 1142px;
 }
 
 .our-team__photos img{
@@ -226,6 +234,7 @@ header {
 /*slider-text*/
 
 .certificates {
+    padding: 0 20px;
     margin-top: 140px;
     margin-bottom: 140px;
 }
@@ -299,6 +308,7 @@ header {
 footer {
     height: 266px;
     background-color: #252525;
+    padding: 0 20px;
 }
 
 .footer {
@@ -313,7 +323,7 @@ footer {
 }
 
 .footer_list {
-    height: 144px;
+    height: 156px;
     list-style: none;
     flex-direction: column;
     justify-content: space-between;
@@ -345,5 +355,229 @@ footer {
 }
 
 .footer-contacts p {
-    margin-top: 84px;
+    margin-top: 83px;
+}
+
+.footer-contacts a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+/*******Форма записи*********/
+
+.record-form {
+    width: 786px;
+    height: 731px;
+    background-color: #252525;
+    color: #FB37FF;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 100px;
+    z-index: 100;
+    display: none;
+}
+
+#gray {  /*Затемнение при клике на кнопку Отправить*/
+    background-color: rgb(69, 69, 69);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    opacity: 0.7;
+    display: none;
+}
+
+.record-form__container {
+    height: 447px;
+    margin-top: 143px;
+    margin-left: 40px;
+    position: relative;
+    bottom: 60px;
+}
+
+.record-form .legend {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+    position: relative;
+    right: 30px;
+}
+
+
+.record-form p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.record-form p.button-enroll__information-button-click {
+    width: 410px;
+    color: #FB37FF;
+    display: none;
+}
+
+.record-form .legend__call-back {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.record-form input {
+    height: 60px;
+    width: 660px;
+    margin-bottom: 50px;
+    outline: 0;
+    outline-offset: 0;
+    color: #FFFFFF;
+    padding-left: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: #252525;
+    border: 1px solid #FB37FF;
+}
+
+.record-form input::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF; 
+    opacity: 0.75;
+}
+
+.record-form input::required {
+    border: 1px solid #FFFFFF;
+}
+
+.record-form input:focus {
+    border: 1px solid #FFFFFF;
+}
+
+
+.record-form input:valid {
+    border: 1px solid white;
+}
+
+.record-form input:invalid {
+    border: 1px solid #f32e7c;
+}
+
+.record-form__button-enroll .record-form__button {
+    margin-right: 48px;
+    align-items: center;
+    width: 240px;
+    color: #FB37FF;
+    padding-right: 28px;
+}
+
+
+
+.record-form__button-enroll .record-form__button:valid {
+    border: 1px solid #FB37FF;
+}
+
+.record-form__button-enroll:hover .record-form__button {
+    border: 1px solid white;
+    color: white;
+}
+
+.button-enroll__information {
+    width: 410px;
+    position: relative;
+    bottom: 22px;
+}
+
+.record-form__cross {
+    position: relative;
+    top: -40px;
+    left: 671px;
+}
+
+.choose-service {
+    width: 705px;
+    margin-bottom: 50px;
+}
+
+.choose-service select {
+    color: white;
+    background-color: #252525;
+    border: 1px solid white;
+    padding-left: 22px;
+}
+
+/* *****Бургер + меню ***** */
+
+.header-burger {
+    background-color: red;
+    width: 398px;
+    flex-direction: column;
+    top: -1px;
+    z-index: 60;
+    position: absolute;
+    right: 0;
+    display: none;
+}
+
+.header-burger img {
+    margin-left: calc(100% - 55px);
+}
+
+.header-burger ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 65px;
+    position: relative;
+    right: 40px;
+}
+
+.header-burger ul li {
+    margin-bottom: 50px;
+    list-style: none;
+}
+
+.header-burger ul li a {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: white;
+}
+
+.header-top__social-network-media {
+    position: relative;
+    left: 110px;
+    width: 226px;
+    margin-bottom: 46px;
+}
+
+.burger-inactive {
+    position: absolute;
+    right: 0;
+    display: none;
+}
+
+.burger-inactive img {
+    margin-bottom: 3px;
 }
