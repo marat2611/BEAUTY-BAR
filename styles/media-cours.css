@@ -96,10 +96,9 @@
         display: block;
     }
 
-    .courses__block--rows {
-        margin: 100px 0;
-        grid-gap: 0;
-    }
+    /* .courses__block--rows {
+        grid-gap: 100px;
+    } */
     
     .courses__item--rows {
         grid-template-rows: 2fr 1fr;
@@ -221,13 +220,14 @@
 
 
 @media screen and (max-width: 610px) {
+    
 
     /* Хедер */
     .header__toggle.is-active + .mobile-menu {
         width: 100%;
     } 
 
-/* Блок курсы */
+    /* Блок курсы */
     .courses__item--coloumns {
         display: flex;
         flex-direction: column;
@@ -279,10 +279,26 @@
     .footer-contacts__social-network a {
         margin: 0;
     }
+
+    .courses__block--center {
+        margin-top: 100px;
+        
+    }
+
+    .courses__block--rows {
+    margin: 100px 0;
+    }
+
+
+    .courses__item {
+    margin: 0;
+    }
 }
 
+
+
 @media screen and (max-width: 380px) {
-      
+    
     
     .header-bottom-logo img {
         height: 29px;
@@ -320,6 +336,13 @@
         line-height: 19px;
     } 
 
+    .courses__block--center {
+        margin-top: 50px;
+    }  
+
+    .courses__block--rows {
+    margin: 50px 0;
+    }
 
 
 }
