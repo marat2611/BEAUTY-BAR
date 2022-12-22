@@ -3,6 +3,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-family: 'Raleway', sans-serif;
     background-color: #F5F5F5;
+    height: auto;
 }
 
 
@@ -100,7 +101,7 @@ header {
 }
 
 .header-top__contacts {
-    width: 800px;
+    width: 100%;
     align-items: center;
 }
 
@@ -140,6 +141,8 @@ header {
     text-decoration: none;
     color: #FFFFFF;
 }
+
+
 
 .hamburger-inner,
 .hamburger-inner::before,
@@ -246,6 +249,10 @@ header {
     height: 570px;
 }
 
+.cours__mainbanner--image-mob {
+    display: none;
+}
+
 .cours__mainbanner--description {
     position: absolute;
 }
@@ -268,6 +275,8 @@ header {
     margin-top: 100px;
 }
 
+
+
 /* Курс Преимущества */
 
 
@@ -275,24 +284,30 @@ header {
     height: 764px;
 }
 
-.benefit__block h2 {
-    margin-bottom: 100px;
+.benefit__block {
+    display: grid;
+    grid-gap: 100px;
 }
 
+
 .benefit__block--center {
-    align-items: center;
-    height: 764px;
+    height: auto;
+    margin: 150px 0;
+}
+
+.benefit__block--item img {
+    height: 70px;
+    width: 70px;
 }
 
 .benefit__items {
+    margin: 0;
     justify-content: space-between;
     gap: 140px;
-    margin-bottom: 50px;
 }
 
-.benefit__block--item {
-    align-items: center;
-    height: 100px;
+.benefit__block--item{
+    width: 50%;
 }
 
 .benefit__block--item img {
@@ -302,7 +317,7 @@ header {
 
 .benefit__block--item p {
     margin-left: 37px;
-    width: 340px;
+    width: auto;
     font-family: 'Inter';
     font-weight: 400;
     font-size: 20px;
@@ -468,35 +483,7 @@ header {
     top: 15px;
 }
 
-/* прибиваем футер
-* {
-    margin: 0;
-    padding: 0;
-}
 
-html,
-body {
-    height: 100%;
-    font-family: 'Inter';
-}
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background-color: #F5F5F5;
-}
-
-main {
-    flex: 1 0 auto;
-    background-color: #F5F5F5;
-}
-
-footer {
-    flex: 0 0 auto;
-} */
-
-/*----Футер-----*/
 
 footer {
     height: 266px;

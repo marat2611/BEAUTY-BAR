@@ -1,5 +1,7 @@
-@media screen and (max-width: 1100px) {
-
+@media screen and (max-width: 900px) {
+    body {
+        height: 100%;
+    }
 
     /* Общие */
     h1 {
@@ -88,6 +90,7 @@
         text-align: center;
         gap: 50px;
         width: 50%;
+        z-index: 100;
     }
 
 /* Страница Курсы Основной Блок */
@@ -96,9 +99,6 @@
         display: block;
     }
 
-    /* .courses__block--rows {
-        grid-gap: 100px;
-    } */
     
     .courses__item--rows {
         grid-template-rows: 2fr 1fr;
@@ -111,9 +111,7 @@
         width: auto;
     }
 
-    .courses__item {
-        margin: 100px 0;
-    }
+   
 
 
     .courses__item--coloumns {
@@ -129,6 +127,10 @@
     .cours__mainbanner {
         height: 442px;
 
+    }
+
+    .cours__mainbanner--background {
+        height: auto;
     }
 
     .cours__mainbanner--image {
@@ -151,8 +153,28 @@
 
 
     /* Преимущества */
+
+    .benefit {
+        height: auto;
+    }
+
+    .benefit__block {
+        display: grid;
+        grid-gap: 50px;
+    }
+
     .benefit__block h2 {
-        margin-top: 150px;
+        margin: 0;
+        width: 60%;
+    }
+
+    .benefit__block--center {
+        height: auto;
+        margin: 150px 0;
+    }
+
+    .benefit__block--item {
+        width: 50%;
     }
 
     .benefit__block--item img {
@@ -161,32 +183,60 @@
     }
 
     .benefit__items {
-        flex-wrap: wrap;
+        margin: 0;
         justify-content: space-between;
         gap: 20px;
-        margin-bottom: 50px;
-    }
-
-    .benefit__block--item{
-        
-        width: 400px;
     }
 
     /* Преподаватель */
     .teacher {
-        margin-top: 150px;
+        margin: 0;
+        height: auto;
+    }
+    .teacher__block {
+        height: auto;
     }
 
+    .teacher__item--left {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .teacher__item--left h3 {
+        margin: 0;
+    }
+
+    .teacher__item--left p {
+        margin: 0;
+    }
+
+    .teacher__item--right {
+        height: 538px;
+    }
 
     /* Расписание */
+    .timetable {
+        height: auto;
+    }
+    
     .timetable__block--center {
-        margin-top: 100px;
+        margin: 150px 0;
+        height: auto;
+    }
+
+    .timetable__block--rows {
+        grid-gap: 50px;
+    }
+
+    .timetable__block--grid {
+        margin: 0;
     }
 
 
     /* Записаться на курс */
     .signup {
-        margin-top: 100px;
+        height: auto;
     }
     
     /* Форма записи на курс */
@@ -206,18 +256,71 @@
     
     }
 
-    .form__button button {
+
+    .form__button {
         margin-top: 0;
+        align-items: center;
+    }
+
+    .form__item--left {
+        width: 100%;
     }
 
     .form__item--right {
         margin-top: 50px;
+        width: 100%;
     }
 
+    .form__input {
+        width: auto;
+    }
 
     
 }
 
+@media screen and (max-width: 710px) {
+    .form__feild {
+        grid-gap: 0;
+        
+    }
+    
+    .form__button {
+        align-items: flex-start;
+    }
+
+    .teacher__block {
+        flex-wrap: wrap;
+    }
+
+    .teacher__item--left {
+        margin-top: 100px;
+    }
+
+    .benefit__block h2 {
+        width: 100%;
+        
+    }
+
+    .benefit__block--center {
+        margin: 100px 0;
+    }
+
+    .benefit__items {
+        display: grid;
+        gap: 50px;
+    }
+
+    .benefit__block--item {
+        width: 100%;
+        align-items: center;
+
+    }
+
+    .benefit__block--item img {
+        height: 60px;
+        width: 60px;
+    }
+}
 
 @media screen and (max-width: 610px) {
     
@@ -336,6 +439,7 @@
         line-height: 19px;
     } 
 
+/* Страница все курсы */
     .courses__block--center {
         margin-top: 50px;
     }  
@@ -344,5 +448,104 @@
     margin: 50px 0;
     }
 
+    /* Страница курса */
+    .cours__mainbanner {
+        height: max-content;
+    }
 
+    .cours__mainbanner--background {
+        height: 670px;
+    }
+
+    .cours__mainbanner--description {
+        display: grid;
+        grid-gap: 30px;
+    }
+
+    .cours__mainbanner--description h1 {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        width: 100%;
+    }
+
+    .cours__mainbanner--description p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        margin: 0;
+    }
+    
+    .cours__mainbanner--image {
+        display: none;
+    }
+
+    .cours__mainbanner--image-mob {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        
+    }
+
+    .benefit__block h2 {
+        width: 100%;
+        
+    }
+
+    .benefit__block--center {
+        margin: 100px 0;
+    }
+
+    .benefit__items {
+        display: grid;
+        gap: 50px;
+    }
+
+    .benefit__block--item {
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .benefit__block--item img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .teacher__block {
+        flex-wrap: wrap;
+    }
+    
+    .teacher__item--left {
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+    .timetable__block--grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timetable__block--right {
+        margin-left: 20px;
+    }
+    
+    .form__item--left {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .form__feild {
+        grid-gap: 50px;
+        grid-template-rows: 1fr;
+    }
+
+   
 }
