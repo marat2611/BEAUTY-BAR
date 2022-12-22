@@ -6,11 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/fav-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="styles/style-we.css">
+    <link rel="stylesheet" href="styles/media-we.css">
     <title>BEAUTY BAR</title>
 </head>
 <body>
+    <div id="gray" onclick="show('none')"><a href="#!" ></a></div>
+
+
     
     <header class="header">
+
+         <!---------- ФОРМА записи ------->
+
+        <form id="record-form-id" class="record-form" action="" method="post">
+            <div class="record-form__container d-flex flex-wrap">
+                <div class="record-form__cross" onclick="show('none')"><a href="#!"><img src="images/cross.svg" alt=""></a></div>
+                <legend class="legend">Оставьте свой номер</legend>
+                <p class="legend__call-back">Мы перезвоним и запишем вас на удобное время</p>
+                <input name="name" required class="input-name"type="text" placeholder="Имя" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" title="Введите свое имя русскими или латинскими буквами">
+                <input name="phone" required class="input-phone" type="tel" placeholder="Телефон в формате 8-ХХХ-ХХХ-ХХ-ХХ" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="Введите номер телефона в формате 8-ХХХ-ХХХ-ХХ-ХХ">
+                <div class="choose-service d-flex flex-sb">
+                    <p>Я хочу записаться на:</p>
+                    <select name="" id="">
+                        <option class="choose-roduct" value="stарт"><p>...</p></option>
+                        <option class="choose-roduct" value="education1"><p>Обучение по курсу  "Итальянское наращивание волос"</p></option>
+                        <option class="choose-roduct" value="education2">Обучение по курсу  "Ламинирование и ботокс натуральных ресниц"</option>
+                        <option class="choose-roduct" value="hair-coloring">Окрашивание волос</option>
+                        <option class="choose-roduct" value="hair-extension">Наращивание волос</option>
+                        <option class="choose-roduct" value="eyelash-extension">Наращивание ресниц</option>
+                        <option class="choose-roduct" value="brows">Коррекция, окрашивание бровей</option>
+                        <option class="choose-roduct" value="nails">Маникюр/педикюр</option>
+                    </select>
+                </div>
+                <div class="record-form__button-enroll d-flex flex-wrap">
+                    <!-- <div class="button-enroll record-form__button d-flex" onclick=""><p><a href="#!">Отправить</a></p></div> -->
+                    <input class="button-enroll record-form__button" type="submit" value="Отправить">
+                    <p id="text-info" class="button-enroll__information">Нажимая на кнопку «Отправить», вы соглашаетесь на обработку персональных данных</p>
+                    <p id="text-button-click" class="button-enroll__information-button-click">Данные успешно отправлены! Мы перезвоним вам в течение 15 минут.</p>
+                </div>
+            </div>
+        </form>
+        
         <div class="header-top container d-flex flex-sb">
             <div class="header-top__contacts d-flex flex-sb">
                 <a href="index.html#how-find-us-widget"><p  id="header-logo">Нижний Новгород, ул. Бурденко, 33</p></a>
@@ -31,9 +67,31 @@
                 <li><a href="index.html#how-find-us-widget">Контакты</a></li>
             </ul>
 
-            <div class="button-enroll d-flex"><p><a href="#!">Записаться</a></p></div>      
-        </div>
+            <div class="button-enroll d-flex" onclick="show('block')"><p><a href="#!">Записаться</a></p></div>      
+        
+                <!------------БУРГЕР + меню-----------> 
+                <div class="header-burger d-flex" id="burger-active">
+                    <div class="burger-active"><a href="#!" onclick="showBurger('none')"><img src="images/burger-white.svg" alt="" ></a></div>
+                    <ul class="menu-media d-flex flex-sb">
+                        <li><a href="#services-and-prices">Услуги</a></li>
+                        <li><a href="courses.html">Курсы</a></li>
+                        <li><a href="we.html">О нас</a></li>
+                        <li><a href="#how-find-us-widget">Контакты</a></li>
+                    </ul>
+                    <div class="header-top__social-network-media d-flex flex-sb">
+                        <a href="https://vk.com/public211470536"><img src="images/vk-ircled.svg" alt=""></a>
+                        <a href="https://viber.click/79960180189"><img src="images/viber.svg" alt=""></a>
+                        <a href="https://api.whatsapp.com/send/?phone=79960180189&text&type=phone_number&app_absent=0"><img src="images/whatsapp.svg" alt=""></a>
+                    </div>
+                </div> 
+                <div class="burger-inactive">
+                    <a href="#!"><img src="images/burger-pink.svg" alt="" onclick="showBurger('block')"></a>
+                </div>  
+        
+        </div>      
+
     </header>
+
     <div class="wrapper">
     <main>
         <section class="about-us">
@@ -62,7 +120,7 @@
         <section class="our-team">
             <div class="our-team__team container">
                 <h2>Наша команда</h2>
-                <div class="our-team__photos d-flex flex-sb">
+                <div class="our-team__photos d-flex flex-sb flex-wrap">
                     <div>
                         <p class="our-team__names">Евгения</p>
                         <img src="images/master-evgeniya.jpg" alt="">
@@ -128,8 +186,8 @@
                 <!--<div class="btn--prev" onclick="previousSlide()"><a>&#10094;</a></div>
                 <div class="btn--next" onclick="nextSlide()"><a>&#10095;</a></div>-->
                 <div class="slider-buttons">
-                    <div class="btn--prev" onclick="previousSlide()"><a>&#10094;</a></div>
-                    <div class="btn--next" onclick="nextSlide()"><a>&#10095;</a></div>
+                    <div class="btn--prev"><a>&#10094;</a></div>
+                    <div class="btn--next"><a>&#10095;</a></div>
                 </div>
             </div>
         </section> 
@@ -156,5 +214,7 @@
     </footer>
     </div>
     <script src="JS/slider-we.js"></script>
+    <script src="JS/app.js"></script>
+    <script src="JS/app-media.js"></script>
 </body>
 </html>
