@@ -10,5 +10,5 @@ function autoSlider () {
         if (left<-2284) {left=0}
         polosa.style.left=left+'px';
         autoSlider ()
-    },3500) 
+    },3000) 
 }

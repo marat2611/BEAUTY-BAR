@@ -517,6 +517,11 @@ span {
     margin-right: 113px;
 }
 
+.map iframe {
+    width: 545px;
+    height: 464px;
+}
+
 .how-find-us__contacts {
     margin-bottom: 68px;
     position: relative;
