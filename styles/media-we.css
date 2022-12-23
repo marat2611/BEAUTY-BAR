@@ -123,11 +123,22 @@ footer {
     margin-left: -50px;
 }
 
+
 }
 
+@media screen and (max-width: 580px) {
+    /* меняется хедер*/
+    
+    .our-team__photos {
+        gap: 50px;
+    }
+}
 @media screen and (max-width: 420px) {
 /* меняется хедер*/
 
+.our-team__photos {
+    gap: 50px;
+}
 .master-yana {
     /*order: 0;*/
     width: 90%;
