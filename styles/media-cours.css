@@ -272,7 +272,7 @@
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
     .form__background {
         height: auto;
     }
