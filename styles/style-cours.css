@@ -230,6 +230,11 @@ header {
     width: 714px;
 }
 
+.courses__item--image {
+    height: 271px;
+    width: 270px;
+}
+
 
 
 /* Курс Главный баннер */
