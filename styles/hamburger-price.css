@@ -76,6 +76,14 @@
   .hamburger--squeeze.is-active .hamburger-inner::after {
     transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
 
+span.hamburger-inner::before {
+  background-color: #fb37ff;
+}
 
+span.hamburger-inner {
+  background-color: #fb37ff;
+}
 
-
+span.hamburger-inner::after {
+  background-color: #fb37ff;
+}
