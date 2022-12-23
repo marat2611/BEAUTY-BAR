@@ -125,7 +125,7 @@
 
     /* Главный баннер */
     .cours__mainbanner {
-        height: 442px;
+        height: 575px;
 
     }
 
@@ -312,7 +312,11 @@
 
 @media screen and (max-width: 710px) {
     
-    
+    .cours__mainbanner--description h1 {
+        width: 100%;
+    }
+
+
     .form__button {
         align-items: flex-start;
     }
@@ -544,7 +548,19 @@
         display: none;
     }
 
+    .cours__mainbanner--img{
+        display: none;
+    }
+
     .cours__mainbanner--image-mob {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        
+    }
+
+    .cours__mainbanner--img-mob {
         display: block;
         position: absolute;
         bottom: 0;
@@ -663,5 +679,7 @@
         width: 100%;
     }
  
-    
+    .form__item--left {
+        display: block;
+    }
 }

@@ -247,12 +247,22 @@ header {
 .cours__mainbanner--image {
     position: absolute;
     left: 230px;
-    height: 570px;
+    height: 575px;
+}
+
+.cours__mainbanner--img {
+    position: absolute;
+    height: 575px;
 }
 
 .cours__mainbanner--image-mob {
     display: none;
 }
+
+.cours__mainbanner--img-mob {
+    display: none;
+}
+
 
 .cours__mainbanner--description {
     position: absolute;
