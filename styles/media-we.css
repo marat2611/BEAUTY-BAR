@@ -1,5 +1,6 @@
 @media screen and (max-width: 1110px)
  {
+    
 
     .phone-media {
         display: none;
@@ -66,6 +67,51 @@
 
 @media screen and (max-width: 640px) {
 /* меняются о нас и футер*/
+
+.about-us {
+    height: 1200px;
+}
+
+.about-us__item {
+    flex-wrap: wrap;
+    height: 1200px;
+}
+.about-us__text {
+    height: 500px;
+}
+/*.about-us__item h1 {
+    font-size: 32px;
+}
+.about-us__item h2 {
+    font-size: 20px;
+}
+.about-us__item p {
+    font-size: 10px;
+}*/
+
+
+
+.master-yana {
+    /*order: 0;*/
+    width: 70%;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.master-yana-img {
+    height: 500px;
+    justify-content: center;
+}
+
+/*.about-us__text {
+    order: 1;
+}*/
+
+
+
+
+
 .footer_list {
     display: none;
 }
@@ -102,5 +148,65 @@ footer {
 
 @media screen and (max-width: 420px) {
 /* меняется хедер*/
+
+
+.about-us__item h1 {
+    font-size: 42px;
+}
+.about-us__item h2 {
+    font-size: 26px;
+}
+.about-us__item p {
+    font-size: 16px;
+}
+
+.header-top__contacts a p {
+    font-size: 15px;
+    
+}
+
+.header-bottom a {
+    width: 200px;
+    
+}
+
+.img-logo {
+    object-fit: cover;
+    width: 100%;
+    
+}
+
+
+.header-burger a img {
+    transform: scale(0.8,0.8);
+    
+}
+
+.burger-inactive a img {
+    transform: scale(0.8,0.8);
+    
+}
+
+
+.header-burger ul li a {
+    font-size: 16px;
+}
+
+.header-burger ul {
+    right: 0;
+}
+
+.header-top__social-network-media  {
+    justify-content: center;
+}
+
+.header-top__social-network-media a {
+    font-size: 24px;
+}
+
+.burger-active {
+    margin-top: 2px;
+}
+
 
 }
