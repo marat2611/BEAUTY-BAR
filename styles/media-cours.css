@@ -1,4 +1,4 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
     body {
         height: 100%;
     }
@@ -135,8 +135,6 @@
 
     .cours__mainbanner--image {
         height: 442px;
-        position: absolute;
-        left: 110px;
         
     }
     
@@ -211,9 +209,6 @@
         margin: 0;
     }
 
-    .teacher__item--right {
-        height: 538px;
-    }
 
     /* Расписание */
     .timetable {
@@ -241,8 +236,7 @@
     
     /* Форма записи на курс */
     .form__block {
-        flex-direction: column;
-        height: auto;
+        width: auto;
     }
 
 
@@ -252,7 +246,7 @@
         font-weight: 700;
         font-size: 40px;
         line-height: 47px;
-        margin-top: 50px;
+        
     
     }
 
@@ -263,12 +257,11 @@
     }
 
     .form__item--left {
-        width: 100%;
+        width: 40%;
     }
 
     .form__item--right {
-        margin-top: 50px;
-        width: 100%;
+        width: 60%;
     }
 
     .form__input {
@@ -278,11 +271,47 @@
     
 }
 
-@media screen and (max-width: 710px) {
-    .form__feild {
-        grid-gap: 0;
+
+@media screen and (max-width: 750px) {
+    .form__background {
+        height: auto;
+    }
+    
+    .form__background p span {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+    }
+
+    .form__item--left {
+        width: 100%;
+        display: grid;
+        grid-auto-rows: 1fr 1fr;
+        margin: 50px 0;
+        height: auto;
+    }
+
+    .form__item--right {
+        width: 100%;
+    }
+
+    .form__block {
+        display: grid;
+        height: auto;
         
     }
+
+    .form__feild {
+        grid-gap: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+
+@media screen and (max-width: 710px) {
+    
     
     .form__button {
         align-items: flex-start;
@@ -323,7 +352,14 @@
     }
 }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 670px) {
+
+    .cours__mainbanner--image {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
     
 
     /* Хедер */
@@ -343,7 +379,7 @@
     align-content: space-between;
     height: 270px;
     grid-gap: 50px;
-}
+    }
 
     /* Футер */
     footer {
@@ -397,11 +433,34 @@
     .courses__item {
     margin: 0;
     }
+
+    .teacher__item--right {
+        width: 100%;
+    }
+
+
+    .form__button {
+        display: grid;
+        justify-content: center;
+        height: auto;
+        grid-gap: 30px;
+    }
+
+    .form__button button {
+        margin: auto;
+    }
+
+    .form__button span {
+        width: 100%;
+    }
+
+    .form__item--right {
+        margin-bottom: 50px;
+    }
+
 }
 
-
-
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 420px) {
     
     
     .header-bottom-logo img {
@@ -513,6 +572,11 @@
         justify-content: space-between;
     }
 
+    .benefit__block--item p {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
     .benefit__block--item img {
         height: 60px;
         width: 60px;
@@ -527,6 +591,21 @@
         gap: 20px;
     }
 
+    .teacher__item--left h2 {
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    .teacher__item--left h3 {
+        font-size: 26px;
+        line-height: 31px;
+    }
+
+    .teacher__item--left p {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
     .timetable__block--grid {
         grid-template-columns: 1fr;
     }
@@ -535,6 +614,11 @@
         margin-left: 20px;
     }
     
+    .timetable__block--right li {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
     .form__item--left {
         font-family: 'Raleway';
         font-style: normal;
@@ -548,5 +632,23 @@
         grid-template-rows: 1fr;
     }
 
+    .form__button span {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+    }
+
+    .form__button button {
+
+    }
    
+}
+
+
+
+@media screen and (max-width: 380px) {
+
 }

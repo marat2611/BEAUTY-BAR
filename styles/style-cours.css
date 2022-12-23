@@ -89,6 +89,7 @@ header {
 .header-top {
     height: 113px;
     align-items: center;
+    gap: 60px;
 }
 
 .header-top p {
@@ -101,7 +102,7 @@ header {
 }
 
 .header-top__contacts {
-    width: 100%;
+    width: 851px;
     align-items: center;
 }
 
@@ -403,14 +404,14 @@ header {
     font-family: 'Inter';
     font-weight: 400;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 24px;
     color: #000000;
 }
 
 /* Курс записаться */
 .form__background {
     background-color: #252525;
-    height: 600px;
+    height: 487px;
     margin-top: 70px;
     
 }
@@ -436,12 +437,20 @@ header {
 .form__block {
     align-items: center;
     justify-content: space-between;
-    height: 600px;
+    height: 487px;
+}
+
+.form__item--left {
+    height: 300px;
+    align-items: center;
 }
 
 .form__feild {
-    grid-gap: 50px;
     grid-template-rows: repeat(3, 1fr);
+    justify-content: space-between;
+    height: 300px;
+    align-items: center;
+    
 }
 
 .form__input {
@@ -470,7 +479,9 @@ header {
 }
 
 .form__button {
-    gap: 50px;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -479,10 +490,18 @@ header {
     color: #FFFFFF;
 }
 
+.form__button span {
+    width: 60%;
+}
+
 ::placeholder {
-    position: absolute;
-    left: 35px;
-    top: 15px;
+    padding: 0 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    width: auto;
 }
 
 
